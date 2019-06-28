@@ -4,10 +4,10 @@ class UserHeader extends React.Component {
   render(){
     return (
       <div className="user-header">
-        <h3>Welcome, {/* username */}!</h3>
+        <h3>Welcome, {this.props.user}!</h3>
         <button>Logout</button>
       </div>
-    ); 
+    );
   }
 }
 

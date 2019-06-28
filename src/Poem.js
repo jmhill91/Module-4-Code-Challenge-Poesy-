@@ -4,11 +4,11 @@ class Poem extends React.Component {
   render(){
     return (
       <div style={{color: "black"}}>
-        <h3>Title</h3>
-        <p>Content</p>
-        <strong>- By Author</strong>
+        <h3>{this.props.singlePoem.title}</h3>
+        <p>{this.props.singlePoem.content}</p>
+        <strong>- By {this.props.singlePoem.author}</strong>
       </div>
-    ); 
+    );
   }
 }
 
